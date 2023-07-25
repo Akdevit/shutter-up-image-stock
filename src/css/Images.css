@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Domine:wght@400;500&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+  font-family: "Domine", serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* =============================== Nav bAar ==================== */
+.Im_nav_baar {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #e8e7e7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+.logo-img{
+  width: 40px;
+  height: 40px;
+}
+.Im-name-nave {
+  width: auto;
+  height: auto;
+  /* background-color: antiquewhite; */
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.Im-search-box {
+  width: 800px;
+  height: 50px;
+  background-color: #e8e8e8;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.Im-input {
+  width: 700px;
+  height: 50px;
+  border: none;
+  outline: 0;
+  font-size: 17px;
+  background-color: transparent;
+}
+.search-im-icon {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  font-size: 30px;
+}
+.Im-hame-menu {
+  width: auto;
+  height: auto;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+.hame-menu-im {
+  font-size: 30px;
+}
+/* ====================================== Im-filter-container================================== */
+.Im-filter-container {
+  width: 100%;
+  height: 80px;
+  /* background-color: #e8e7e7; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e8e7e7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.Im-drop-down-menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  /* background-color: #cc2727; */
+}
+#All-Images,
+#Orientation,
+#safesearch,
+#order,
+#color {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  outline: 0;
+  cursor: pointer;
+  /*  border-top:none;
+  border-right: none;
+  border-left: none; */
+}
+/* =============================== Im-ser-text-name ====================== */
+.Im-ser-text-name {
+  width: 100%;
+  margin-top: 70px;
+  height: auto;
+  display: grid;
+  gap: 10px;
+}
+.ser-Im-text {
+  margin-left: 30px;
+}
+/* ====================================== Im-Images-Container ===================== */
+.Im-Images-Container {
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Im-Images-Container-box {
+  width: 1480px;
+  height: auto;
+  columns: 4;
+  column-gap: 16px;
+}
+.img-res {
+  display: inline-block;
+  margin-bottom: 16px;
+  position: relative;
+  cursor: pointer;
+}
+.on-img {
+  width: 100%;
+  border-radius: 5px;
+}
+/* ========================== Im-Pagination =========================== */
+.Im-Pagination {
+  width: 100%;
+  height: 100px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.prive-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.next_btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.fa-arrow-right,
+.fa-arrow-left {
+  font-size: 25px;
+}
+.next_btn:hover {
+  background-color: #14bc7d;
+  transition: all 1s ease-in-out;
+}
+.prive-btn:hover {
+  background-color: #14bc7d;
+  transition: all 1s ease-in;
+}
+.a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* =================================== media Query ========================== */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* =============================== Nav bAar ==================== */
+  .Im_nav_baar {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #e8e7e7;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .im-name {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    display: none;
+  }
+  .Im-search-box {
+    width: 230px;
+    height: 40px;
+
+    gap: 2px;
+  }
+  .Im-input {
+    width: 180px;
+    height: 40px;
+
+    font-size: 16px;
+  }
+  .search-im-icon {
+    font-size: 20px;
+  }
+  .up {
+    display: none;
+  }
+  /* ====================================== Im-filter-container================================== */
+
+  .Im-drop-down-menu {
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .Im-drop-down-menu::-webkit-scrollbar {
+    display: none;
+  }
+  /* =============================== Im-ser-text-name ====================== */
+  .Im-ser-text-name {
+    width: 100%;
+    margin-top: 70px;
+    height: auto;
+    display: grid;
+    gap: 10px;
+  }
+  .ser-Im-text {
+    margin-left: 10px;
+  }
+  /* ====================================== Im-Images-Container ===================== */
+  .Im-Images-Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .Im-Images-Container-box {
+    width: 350px;
+    height: auto;
+    columns: 1;
+    column-gap: 16px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* body {
+    background-color: #14bc7d;
+  } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* =============================== Nav bAar ==================== */
+  .Im_nav_baar {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #e7e7e7;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .im-name {
+    font-size: 20px;
+  }
+  .Im-search-box {
+    width: 400px;
+    height: 40px;
+    gap: 2px;
+  }
+  .Im-input {
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .search-im-icon {
+    font-size: 20px;
+  }
+
+  .up {
+    display: block;
+  }
+
+  /* ====================================== Im-filter-container================================== */
+
+  .Im-drop-down-menu {
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .Im-drop-down-menu::-webkit-scrollbar {
+    display: none;
+  }
+  /* ====================================== Im-Images-Container ===================== */
+  .Im-Images-Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .Im-Images-Container-box {
+    width: 750px;
+    height: auto;
+    columns: 2;
+    column-gap: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* ====================================== Im-Images-Container ===================== */
+  .Im-Images-Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .Im-Images-Container-box {
+    width: 980px;
+    height: auto;
+    columns: 3;
+    column-gap: 16px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* ====================== Nav baar ===================== */
+  .im-name {
+    font-size: 30px;
+  }
+  .Im-search-box {
+    width: 800px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Im-input {
+    width: 700px;
+    height: 50px;
+    border: none;
+    outline: 0;
+    font-size: 17px;
+    background-color: transparent;
+  }
+  .search-im-icon {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  /* ====================================== Im-Images-Container ===================== */
+  .Im-Images-Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .Im-Images-Container-box {
+    width: 1480px;
+    height: auto;
+    columns: 4;
+    column-gap: 16px;
+  }
+}
